@@ -40,6 +40,8 @@
     </div>
 </div>
 
+
+
 @section('scripts')
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script type="text/javascript">
@@ -72,7 +74,7 @@
           "targets": 1,
           "render": function (data, type, row, meta) {
             // console.log(data);
-            return '<img src="{{ asset("storage/nRihewqvUF5Fffs0QKyS9rDDxEIZiWom8aK3wMXS.jpg") }}" width="50" height="50">';
+            return '<img src="{{config("task.file_url")}}'+data+'" width="50" height="50">';
           },
         },
 
